@@ -3,6 +3,7 @@ module.exports = function (network) {
   var prefix;
 
   switch (net) {
+/*
     case 1: // main net
       prefix = ''
       break
@@ -15,8 +16,18 @@ module.exports = function (network) {
     case 42: // kovan test net
       prefix = 'kovan.'
       break
+*/
+    case 44787: 
+      prefix = 'alfajores-blockscout.celo-testnet.org'
+      break
+    case 62320: 
+      prefix = 'baklava-blockscout.celo-testnet.org'
+      break
+    case 42220: 
+      prefix = 'explorer.celo.org'
+      break
     default:
-      prefix = ''
+      prefix = 'explorer.celo.org'
   }
   return prefix
 }
